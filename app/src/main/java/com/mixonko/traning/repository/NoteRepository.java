@@ -23,15 +23,15 @@ public class NoteRepository {
     }
 
     public void update(Note note){
-        new UpdateNoteAsuncTask(noteDao).execute();
+        new UpdateNoteAsuncTask(noteDao).execute(note);
     }
 
     public void insert(Note note){
-        new InsertNoteAsuncTask(noteDao).execute();
+        new InsertNoteAsuncTask(noteDao).execute(note);
     }
 
     public void delete(Note note){
-        new DeleteNoteAsuncTask(noteDao).execute();
+        new DeleteNoteAsuncTask(noteDao).execute(note);
     }
 
     public void deleteAllNotes(){
