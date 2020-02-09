@@ -35,14 +35,14 @@ public abstract class NoteDataBase extends RoomDatabase {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
-            new pupelateDbAsyncTask(instance).execute();
+            new populateDbAsyncTask(instance).execute();
         }
     };
 
-    private static class pupelateDbAsyncTask extends AsyncTask<Void, Void, Void>{
+    private static class populateDbAsyncTask extends AsyncTask<Void, Void, Void>{
         private NoteDao noteDao;
 
-        private pupelateDbAsyncTask(NoteDataBase db){
+        private populateDbAsyncTask(NoteDataBase db){
             this.noteDao = db.noteDao();
         }
 
