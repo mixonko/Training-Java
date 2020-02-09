@@ -8,7 +8,6 @@ import android.widget.TextView;
 import com.mixonko.traning.R;
 import com.mixonko.traning.entity.Note;
 
-import java.security.acl.LastOwnerException;
 import java.util.ArrayList;
 import java.util.List;
 
