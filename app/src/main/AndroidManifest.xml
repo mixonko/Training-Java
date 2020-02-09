@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".view.AddNoteActivity"
+            android:name=".view.AddEditNoteActivity"
             android:parentActivityName=".view.MainActivity" />
         <activity
             android:name=".view.MainActivity"
