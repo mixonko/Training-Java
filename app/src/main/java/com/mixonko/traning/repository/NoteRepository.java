@@ -1,6 +1,5 @@
 package com.mixonko.traning.repository;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.AsyncTask;
 
